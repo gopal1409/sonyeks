@@ -5,7 +5,7 @@
    45  docker network ls
    46  docker network inspect my_app_net
  
-   48  docker container run -d --name my_nginx --network proxy nginx:alpine
+   48  docker container run -d --name my_nginx --network my_app_net nginx:alpine
    49  docker container run -d --name proxy --network my_app_net nginx:alpine
    50  docker ps
    51  docker network ls
